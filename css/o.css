@@ -370,3 +370,7 @@ summary.dialog-text {
   margin-top: 0;
   padding-top: 0;
 }
+.resp {
+  width: 100%; 
+  height: auto;
+}
