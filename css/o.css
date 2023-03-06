@@ -374,3 +374,7 @@ summary.dialog-text {
   width: 100%; 
   height: auto;
 }
+
+pre {
+  background-clip: border-box;
+}
