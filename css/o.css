@@ -378,3 +378,17 @@ summary.dialog-text {
 pre {
   background-clip: border-box;
 }
+
+#col-main {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .col-main {
+      clear: both;
+      display: block;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+  }
+}
