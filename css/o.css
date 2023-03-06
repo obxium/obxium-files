@@ -376,6 +376,7 @@ summary.dialog-text {
 }
 
 pre {
+  display: block;
   background-clip: border-box;
 }
 
