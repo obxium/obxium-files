@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>obxium files | the artist shares on Bitcoin</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>obxium files</title>
     <link rel="Shortcut Icon" type="image/x-icon" href="/img/icon.png">
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png">
@@ -24,223 +23,383 @@
     <meta property="og:title" content="The obxium files">
     <meta name="Description" content="A collection of files inscribed on the Bitcoin blockchain">
     <meta property="og:description" content="A collection of files inscribed on the Bitcoin blockchain">
-    <link rel="stylesheet" href="/css/system.css">
-    <link rel="stylesheet" href="/css/o.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/platinum.css">
+    <link rel="stylesheet" href="css/obxium.css">
+    <script src="/js/jqm.js"></script>
+    <script src="/js/jquim.js"></script>
+    <script src="/js/mm.js"></script>
+    <script src="/js/jquitpm.js"></script>
 </head>
 
-<body id="hello">
-    <div class="container">
-        <div class="layout">
-            <p class="col col-main">
-            <aside class="window sidebar">
-                <div class="title-bar">
-                    <button type="button" aria-label="Close" class="close"
-                        onclick="playSnd('eep');return false;"></button>
-                    <h1 class="title">obxium files</h1>
-                    <button type="button" aria-label="Resize" class="resize"
-                        onclick="playSnd('indigo');return false;"></button>
-                </div>
-                <div class="separator"></div>
-                <div class="window-pane">
-                    <ul class="menu-items">
-                        <li><a href="/">Home</a></li>
-                        <li>Genesis
-                            <ul>
-                                <li><a href="#obxium-disk">obxium diskette</a></li>
-                            </ul>
+<body>
+    <noscript>
+        <p><em>This thing requires JavaScript.</em></p>
+    </noscript>
+    <!--
+        <div id="boot" class="modal">
+            <button type="button" class="command_button boot-button close-button" id="boot-button">
+                <img src="img/mac.png">
+                <br>
+                Boot
+            </button>
+        </div>
+        -->
+    <div id="sadmac" class="modal hidden">
+        <img alt="A very sad mac" src="img/sadmac.png">
+    </div>
+    <nav>
+        <div class="nav-wrapper">
+            <ul class="nav-list">
+                <li id="apple-logo">
+                    <img alt="a logo" src="img/apple.png">
+                    <ul class="menu command_button">
+                        <li id="menu-about"><img src="img/mac.png" width="16" alt="obxium diskette">about obxium</li>
+                        <li id="menu-errorWindow"><img src="img/mac.png" width="16" alt="obxium diskette">obxium BTC
+                            private key</li>
+                    </ul>
+                </li>
+                <li>
+                    File
+                    <ul class="menu command_button">
+                        <li id="menu-diskette"><img src="img/web.png" width="16" alt="obxium diskette">obxium diskette
                         </li>
-                        <li>Blason
-                            <ul>
-                                <li><a href="#blason">Blason de Rochechouart</a></li>
-                            </ul>
+                        <li id="menu-blason"><img src="img/web.png" width="16" alt="Blason de Rochechouart">Blason de
+                            Rochechouart</li>
+                        <li id="menu-qrcode"><img src="img/web.png" width="16" alt="obxium.com QR code">obxium.com QR
+                            code</li>
+                        <li id="menu-qrcodeviral"><img src="img/web.png" width="16" alt="obxium.com QR code">Going Viral
+                            QR code</li>
+                        <li id="menu-ddfori"><img src="img/web.png" width="16" alt="obxium.com QR code">DDF ORI</li>
+                        <li id="menu-ddfplain"><img src="img/web.png" width="16" alt="obxium.com QR code">DDF Plain</li>
+                        <li id="menu-pepegiant"><img src="img/web.png" width="16" alt="obxium.com QR code">PEPEGIANT
                         </li>
-                        <li>Codes
-                            <ul>
-                                <li><a href="#obxium-qr">obxium.com QR Code</a></li>
-                                <li><a href="#going-viral-qr">Going Viral QR Code</a></li>
-                            </ul>
+                        <li id="menu-viralunicode"><img src="img/web.png" width="16" alt="Going Viral Unicode">Going Viral Unicode
                         </li>
-                        <li>Dope Dead Frog
-                            <ul>
-                                <li><a href="#ddf-ori">DDF ORI</a></li>
-                                <li><a href="#ddf-plain">DDF Plain</a></li>
-                            </ul>
+                        <li id="menu-phrackprofile"><img src="img/web.png" width="16" alt="Phrack Profile">Phrack Profile
                         </li>
-                        <li>PEPE
-                            <ul>
-                                <li><a href="#ordinary-pepegiant">Ordinary PEPEGIANT</a></li>
-                            </ul>
+                        <li id="menu-whatisart"><img src="img/web.png" width="16" alt="What Is Art">What Is Art
                         </li>
-                        <li>Plaintext
-                            <ul>
-                                <li><a href="#going-viral-unicode">Going Viral Unicode</a></li>
-                                <li><a href="#phrack-profile">Phrack Profile</a></li>
-                                <li><a href="#what-is-art">What is art?</a></li>
-                            </ul>
-                        </li>
-                        <li>Memes
-                            <ul>
-                                <li><a href="#donut">Donut</a></li>
-                            </ul>
-                        </li>
-                        <li>Private keys
-                            <ul>
-                                <li><a href="#">Do Kwon</a></li>
-                            </ul>
+                        <li id="menu-donut"><img src="img/web.png" width="16" alt="What Is Art">Donut
                         </li>
                     </ul>
-                </div>
-            </aside>
+                </li>
+                <li>
+                    Edit
+                    <ul class="menu command_button">
+                        <li class="disabled noimg">Copy</li>
+                        <li class="disabled noimg">Paste</li>
+                    </ul>
+                </li>
+                <li>
+                    Help
+                    <ul class="menu command_button">
+                        <li id="menu-help"><img src="img/help.png" width="16" alt="Help">Help</li>
+                    </ul>
+                </li>
+                <li id="macoslogo" class="nav-list">
+                    <img src="img/macos.svg" alt="MacOS">
+                    <ul id="app-menu" class="menu">
+                    </ul>
+                </li>
+                <li id="time" class="time text-center timeText">
+                    Loading...
+                </li>
+            </ul>
+        </div>
+    </nav>
 
+    <div id="icon-holder" title="Desktop icon row">
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-viralunicode">
+            <img src="img/web.png" alt="Going Viral Unicode">
+            <h2>Viral Unicode</h2>
+        </div>
+
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-qrcodeviral">
+            <img src="img/web.png" alt="Going Viral QR code">
+            <h2>Going Viral QR code</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-ddfplain">
+            <img src="img/web.png" alt="DDF Plain">
+            <h2>DDF Plain</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-donut">
+            <img src="img/web.png" alt="Donut">
+            <h2>Donut</h2>
+        </div>
+
+    </div>
+
+    <div id="icon-holder2" title="Desktop icon row 2">
+        <div class="icon draggable-icon ui-widget-content" id="icon-diskette">
+            <img src="img/web.png" alt="obxium diskette">
+            <h2>obxium diskette</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-blason">
+            <img src="img/web.png" alt="Blason">
+            <h2>Blason</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-qrcode">
+            <img src="img/web.png" alt="obxium.com QR code">
+            <h2>obxium.com QR code</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-ddfori">
+            <img src="img/web.png" alt="DDF ORI">
+            <h2>DDF ORI</h2>
+        </div>
+
+    </div>
+
+    <div id="icon-holder3" title="Desktop icon row">
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-pepegiant">
+            <img src="img/web.png" alt="Ordinary PEPEGIANT">
+            <h2>Ordinary PEPEGIANT</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-phrackprofile">
+            <img src="img/web.png" alt="Phrack Profile">
+            <h2>Phrack Profile</h2>
+        </div>
+
+        <div class="icon draggable-icon ui-widget-content" id="icon-whatisart">
+            <img src="img/web.png" alt="What Is Art?">
+            <h2>What Is Art?</h2>
+        </div>
+
+    </div>
+
+    <div id="about" class="moveit-about content resizable draggable-window hidden" data-window-icon="img/about.png"
+        data-window-name="About">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>about obxium</span></h1>
+        <div class="inner">
+            <div class="icon">
+                <img src="img/tv.png" alt="Help for obxium files icon">
+            </div>
+            <h2 class="center">
+                obxium is an artist.
+            </h2>
+        </div>
+    </div>
+
+    <div id="help" class="moveit-help content resizable draggable-window" data-window-icon="img/help.png"
+        data-window-name="Help">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Welcome to obxium files</span></h1>
+        <div class="inner">
+            <div class="icon">
+                <img src="img/help.png" alt="Help for obxium files icon">
+            </div>
+            <h2 class="subheading">Hello.</h2>
+            <p>
+                obxium files is a small archive of files important to the artist and shared here with you.<br>
+                The concept for this project was taken directly from the
+                "<a href="https://www.thedanfiles.com/" title="The Dan Files">The Dan Files</a>".
             </p>
-            <p class="col col-complementary" role="complementary">
-            <div id="mainchonk" class="standard-dialog">
-                <p class="heading center"><img alt="obxium donut" src="/img/obxium-donut.svg" height="32" width="32">
-                    obxium files</p>
-                <p class="desc center">Artist curated data inscribed on the Bitcoin blockhain</p>
 
-                <h2 class="subheading">Hello.</h2>
-                <p class="left18">obxium files is a small archive of files important to the artist and
-                    shared here with
-                    you. <br> The concept for this project was taken directly from the "<a
-                        href="https://www.thedanfiles.com/" title="The Dan Files">The Dan Files</a>".</p>
+            <p>
+                All the files here also live on the Bitcoin blockchain through the power of<br>
+                inscriptions, part of the <a href="https://ordinals.com/" title="Ordinals">Ordinals</a>
+                system for decorating the individual base unit <br>of Bitcoin, called <em>Satoshis</em>.
+            </p>
+            <p>
+                The files are presented in the style of Mac OS 9 for joy &amp; nostalgia.
+            </p>
+            <p>
+                <button type="button" class="btn disabled">bitcoind: v24.0.1</button>
+                <button type="button" class="btn disabled">ord: v0.5.0</button>
+                <button type="button" class="btn disabled">ord:v0.5.1</button>
+                <button type="button" class="btn disabled">OS: 9</button><br>
+            </p>
+            <p>
+                <img alt="Notice about scrolling or just reload the site" src="/img/alert_notice.png" height="16" width="16">&nbsp; Tip: If you get stuck and
+                cannot scroll, try the maximize button in the top right area<br> of any window.
+                You can also just reload the site to start with a fresh state.
+            </p>
+            <hr>
+            <p>
+                Art on 5 blockchains since 2018 @ ↹ atelier obxium 🇫🇷
+            </p>
+            <p>
+                <code>System.css</code> is <a href="https://github.com/robbiebyrd/platinum/blob/main/LICENSE"
+                    title="Platinum CSS is MIT licensed.">MIT licensed</a>
+            </p>
+        </div>
+    </div>
 
-                <div class="left18">
-                    <blockquote>
-                        All the files here also live on the Bitcoin blockchain through the power of
-                        inscriptions, part of the <a href="https://ordinals.com/" title="Ordinals">Ordinals</a>
-                        system for decorating the individual base unit of Bitcoin, called <em>Satoshis</em>.
-                    </blockquote>
+    <div id="diskette" class="moveit-diskette content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="Diskette">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>obxium diskette</span></h1>
+        <div class="inner">
+            <img src="/img/O-sig-ordinals.png" alt="obxium diskette" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 143175</summary>
+                <pre>
+        id
+        8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842ei0
+        address
+        bc1p3hhlw2t3l3tjhj60drq2npe4z8g6urmhz6we5r23m628ca4ysknq2yegxz
+        output value
+        10000
+        sat
+        530022454356941
+        content length
+        4958 bytes
+        content type
+        image/png
+        timestamp
+        2023-02-19 02:25:10 UTC
+        genesis height
+        777266
+        genesis fee
+        1381
+        genesis transaction
+        8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e
+        location
+        8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e:0:0
+        output
+        8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                    <button type="button" class="btn" disabled>bitcoind: v24.0.1</button> <button type="button"
-                        class="btn" disabled>ord:
-                        v0.5.0</button> <button type="button" class="btn" disabled>ord:
-                        v0.5.1</button> <button type="button" class="btn" disabled>System: 7</button>
+    <div id="blason" class="moveit-blason content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="Blason">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Blason de Rochechouart</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
+                -->
+            <img src="/img/blason-rochechouart.svg" alt="Blason de Rochechouart" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 272922</summary>
+                <pre>
+        id
+        108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14i0
+        address
+        bc1przp4z67emdwveppll47ytz74wevaec8nwhfvc9q5924m4k73kmjsrdlh58
+        output value
+        10000
+        sat
+        1870446940009262
+        content length
+        3978 bytes
+        content type
+        image/svg+xml
+        timestamp
+        2023-03-03 19:02:20 UTC
+        genesis height
+        779162
+        genesis fee
+        4544
+        genesis transaction
+        108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14
+        location
+        108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14:0:0
+        output
+        108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                <section class="component"></section>
-                <h2 class="subheading" id="obxium-disk">obxium diskette</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">O-sig-ordinals.png</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/O-sig-ordinals.png" alt="O signature obxium floppy disk in ordinals edition"
-                            class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 143175</summary>
-                            <pre>
-id
-8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842ei0
-address
-bc1p3hhlw2t3l3tjhj60drq2npe4z8g6urmhz6we5r23m628ca4ysknq2yegxz
-output value
-10000
-sat
-530022454356941
-content length
-4958 bytes
-content type
-image/png
-timestamp
-2023-02-19 02:25:10 UTC
-genesis height
-777266
-genesis fee
-1381
-genesis transaction
-8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e
-location
-8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e:0:0
-output
-8aa18825db7524c29927527c203a777ffa2d3c6aeaaac23aa9ce46ce225e842e:0
-offset
-0
-                        </pre>
-
-                        </details>
-                    </div>
+    <div id="qrcode" class="content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="obxium">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>obxium.com QR Code</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
-
-                <section class="component"></section>
-                <h2 class="subheading" id="blason">Blason de Rochechouart</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">blason-rochechouart.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/blason-rochechouart.svg" alt="Blason de Rochechouart" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 272922</summary>
-                            <pre>
-id
-108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14i0
-address
-bc1przp4z67emdwveppll47ytz74wevaec8nwhfvc9q5924m4k73kmjsrdlh58
-output value
-10000
-sat
-1870446940009262
-content length
-3978 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-03 19:02:20 UTC
-genesis height
-779162
-genesis fee
-4544
-genesis transaction
-108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14
-location
-108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14:0:0
-output
-108b541081d6fcb208eddf1f4b97b7ef7d727bc01e6aaa5e099d00db22f93f14:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-
-                </div>
-
-                <section class="component"></section>
-                <h2 class="subheading" id="obxium-qr">obxium.com QR Code</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">obxium-com.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/obxium-com.svg" alt="QR code for obxium.com" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 308058</summary>
-                            <pre>
+                -->
+            <img src="/img/obxium-com.svg" alt="QR code for obxium.com" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 308058</summary>
+                <pre>
 id
 cc46a6efc4c268dae58dc6c4428be9c54132c6c4b1ce1b85b4e2f8e051e319c8i0
 address
@@ -267,286 +426,337 @@ output
 cc46a6efc4c268dae58dc6c4428be9c54132c6c4b1ce1b85b4e2f8e051e319c8:0
 offset
 0
-                            </pre>
-                        </details>
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                    </div>
+    <div id="qrcodeviral" class="content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="Viral">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Going Viral QR Code</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
+                -->
+            <img src="/img/going-viral.svg" alt="Going viral QR code" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 288619</summary>
+                <pre>
+        id
+        ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bfi0
+        address
+        bc1pfnrcun7ykr9k0m9ey6ljhzr6agsffy5mga6anjtp0egq7472wrgqzsx8jj
+        output value
+        10000
+        sat
+        1657177931194029
+        content length
+        40398 bytes
+        content type
+        image/svg+xml
+        timestamp
+        2023-03-04 11:45:42 UTC
+        genesis height
+        779273
+        genesis fee
+        20586
+        genesis transaction
+        ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf
+        location
+        ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf:0:0
+        output
+        ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                <section class="component"></section>
-                <h2 class="subheading" id="going-viral-qr">Going Viral QR Code</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">going-viral.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/going-viral.svg" alt="QR code that is going viral" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 288619</summary>
-                            <pre>
-id
-ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bfi0
-address
-bc1pfnrcun7ykr9k0m9ey6ljhzr6agsffy5mga6anjtp0egq7472wrgqzsx8jj
-output value
-10000
-sat
-1657177931194029
-content length
-40398 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-04 11:45:42 UTC
-genesis height
-779273
-genesis fee
-20586
-genesis transaction
-ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf
-location
-ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf:0:0
-output
-ac701b9a84e3d5ed8c747ce5231ab064cc18c2e5ea5818d605ff274b8c3780bf:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
+    <div id="ddfori" class="content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="DDF ORI">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>DDF ORI</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
+                -->
+            <img src="/img/ddf-ori.svg" alt="DDF ORI" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 273395</summary>
+                <pre>
+        id
+        35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaai0
+        address
+        bc1png7q4ts09fyzxu5cslpc60v347j3uczeu4n3sj25ndx0s3h920yqlc2mtz
+        output value
+        10000
+        sat
+        1870446940023806
+        content length
+        2034 bytes
+        content type
+        image/svg+xml
+        timestamp
+        2023-03-03 19:18:21 UTC
+        genesis height
+        779165
+        genesis fee
+        2588
+        genesis transaction
+        35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa
+        location
+        35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa:0:0
+        output
+        35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                <section class="component"></section>
-                <h2 class="subheading" id="ddf-ori">DDF ORI</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">ddf-ori.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/ddf-ori.svg" alt="Dope Dead Frog Ordinal Inscription" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 273395</summary>
-                            <pre>
-id
-35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaai0
-address
-bc1png7q4ts09fyzxu5cslpc60v347j3uczeu4n3sj25ndx0s3h920yqlc2mtz
-output value
-10000
-sat
-1870446940023806
-content length
-2034 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-03 19:18:21 UTC
-genesis height
-779165
-genesis fee
-2588
-genesis transaction
-35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa
-location
-35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa:0:0
-output
-35d52a0a585255a3fc52037bda76aaf2159c47e672bf236fe4231a057ee35eaa:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
+    <div id="ddfplain" class="content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="DDF Plain">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>DDF Plain</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
+                -->
+            <img src="/img/ddf.svg" alt="DDF plain" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 276877</summary>
+                <pre>
+        id
+        c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73ci0
+        address
+        bc1plj23euj86u0djchakw5hdg0aah583gzx0xevehnqpnd05nqrk74sapgagp
+        output value
+        10000
+        sat
+        1870446940040207
+        content length
+        2975 bytes
+        content type
+        image/svg+xml
+        timestamp
+        2023-03-03 23:39:36 UTC
+        genesis height
+        779197
+        genesis fee
+        3532
+        genesis transaction
+        c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c
+        location
+        c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c:0:0
+        output
+        c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                <section class="component"></section>
-                <h2 class="subheading" id="ddf-plain">DDF Plain</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">ddf.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/ddf.svg" alt="Plain old Dope Dead Frog Ordinal Inscription" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 276877</summary>
-                            <pre>
-id
-c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73ci0
-address
-bc1plj23euj86u0djchakw5hdg0aah583gzx0xevehnqpnd05nqrk74sapgagp
-output value
-10000
-sat
-1870446940040207
-content length
-2975 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-03 23:39:36 UTC
-genesis height
-779197
-genesis fee
-3532
-genesis transaction
-c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c
-location
-c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c:0:0
-output
-c17d3456844b862f06b2eebab248b1b6e11db30ad64f8d864577411f37e9a73c:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
+    <div id="pepegiant" class="moveit-pepegiant content resizable draggable-window hidden" data-window-icon="img/web.png"
+        data-window-name="PEPEGIANT">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Ordinary PEPEGIANT</span></h1>
+        <div class="inner">
+            <!--
+                <div class="icon">
+                    <img src="img/about.png" alt="Macintosh Computer">
                 </div>
+                -->
+            <img src="/img/ordinary-pepegiant.svg" alt="Ordinary PEPEGIANT" class="baby">
+            <details class="standard-dialog">
+                <summary class="dialog-text">Inscription 292084</summary>
+                <pre>
+        id
+        4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670i0
+        address
+        bc1p8j6jhs05c82zcgvlgc26t54wkayag0ysdpnmjunn8t6zf3lr0kyqanzp08
+        output value
+        10000
+        sat
+        1870446940058836
+        content length
+        30710 bytes
+        content type
+        image/svg+xml
+        timestamp
+        2023-03-04 17:04:00 UTC
+        genesis height
+        779306
+        genesis fee
+        15714
+        genesis transaction
+        4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670
+        location
+        4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670:0:0
+        output
+        4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670:0
+        offset
+        0
+                    </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                <section class="component"></section>
-                <h2 class="subheading" id="ordinary-pepegiant">Ordinary PEPEGIANT</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">ordinary-pepegiant.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
+    <div id="viralunicode" class="content resizable draggable-window hidden" data-window-icon="img/web.png" data-window-name="viralunicode">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Going Viral Unicode</span></h1>
+        <div class="inner">
+            <!--
+            <div class="icon">
+                <img src="img/about.png" alt="Macintosh Computer">
+            </div>
+            -->
+            <pre>
+    X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H* 🎨🌊👽 obxium was here
+            </pre>
+            <details class="standard-dialog">
+            <summary class="dialog-text">Inscription 281999</summary>
+                <pre>
+    id
+    1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967ci0
+    address
+    bc1pky2sl6hf3yres7fg8ca4xa999j94sc8pthn9wchuyxf2qplnamt
+    output value
+    10000
+    sat
+    1657177931183705
+    content length
+    98 bytes
+    content type
+    text/plain;charset=utf-8
+    timestamp
+    2023-03-04 04:20:26 UTC
+    genesis height
+    779227
+    genesis fee
+    324
+    genesis transaction
+    1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c
+    location
+    1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c:0:0
+    output
+    1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c:0
+    offset
+    0
+                </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                    <div class="window-pane">
-
-                        <img src="/img/ordinary-pepegiant.svg" alt="an ordinary PEPEGIANT" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 292084</summary>
-                            <pre>
-id
-4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670i0
-address
-bc1p8j6jhs05c82zcgvlgc26t54wkayag0ysdpnmjunn8t6zf3lr0kyqanzp08
-output value
-10000
-sat
-1870446940058836
-content length
-30710 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-04 17:04:00 UTC
-genesis height
-779306
-genesis fee
-15714
-genesis transaction
-4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670
-location
-4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670:0:0
-output
-4514106fc916ce6af61531d1bfa3a59dc7480dc2004e49f331b1ca20e4ce8670:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-                </div>
-
-
-                <section class="component"></section>
-                <h2 class="subheading" id="going-viral-unicode">Going Viral Unicode</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">going-viral.txt</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-                        <pre>
-X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H* 🎨🌊👽 obxium was here
-                        </pre>
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 281999</summary>
-                            <pre>
-id
-1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967ci0
-address
-bc1pky2sl6hf3yres7fg8ca4xa999j94sc8pthn9wchuyxf2qplnamt
-output value
-10000
-sat
-1657177931183705
-content length
-98 bytes
-content type
-text/plain;charset=utf-8
-timestamp
-2023-03-04 04:20:26 UTC
-genesis height
-779227
-genesis fee
-324
-genesis transaction
-1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c
-location
-1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c:0:0
-output
-1f253afe4699414d352b24d2297f9ee457414c768719e6b901dea967c:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-                </div>
-
-                <section class="component"></section>
-                <h2 class="subheading" id="phrack-profile">Phrack Profile</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">obxium-phrack-profile.txt</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <pre>
-                                obxium
-                                ~~~~~~
+    <div id="phrackprofile" class="content resizable draggable-window hidden" data-window-icon="img/web.png" data-window-name="phrackprofile">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Phrack Profile</span></h1>
+        <div class="inner">
+            <!--
+            <div class="icon">
+                <img src="img/about.png" alt="Macintosh Computer">
+            </div>
+            -->
+            <pre>
 Personal
 ~~~~~~~~
 
@@ -562,238 +772,246 @@ Approximate Location:  9a1bf413b2baf72d29f949dff5fb46658f0734cc43b25017809132b54
            Eye color:  d996414cd84c41dd032d0e41ad1533312ae685d91ee5c5a6b34d593f72e2eb5d
           Hair Color:  a0b43df06f52085e62ab592a6adc991e32fadfa13f51c7692ba1c1720b5663d2
            Computers:  7312d274bcf92a573fa46575ffed5fbdf7d034d26eacdd7bf3dfdf3fb37f8f87
+            </pre>
+            <details class="standard-dialog">
+            <summary class="dialog-text">Inscription 278297</summary>
+                <pre>
+    id
+    42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625i0
+    address
+    bc1pl8afxma2vg47n35s4wwpl3q4trv2tsurpnw5yu7clvfsq82kc9y
+    output value
+    10000
+    sat
+    1870446940053739
+    content length
+    1095 bytes
+    content type
+    text/plain;charset=utf-8
+    timestamp
+    2023-03-04 00:56:27 UTC
+    genesis height
+    779209
+    genesis fee
+    826
+    genesis transaction
+    42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625
+    location
+    42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625:0:0
+    output
+    42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625:0
+    offset
+    0
+                </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
-                            </pre>
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 278297</summary>
-                            <pre>
-id
-42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625i0
-address
-bc1pl8afxma2vg47n35s4wwpl3q4trv2tsurpnw5yu7clvfsq82kc9y
-output value
-10000
-sat
-1870446940053739
-content length
-1095 bytes
-content type
-text/plain;charset=utf-8
-timestamp
-2023-03-04 00:56:27 UTC
-genesis height
-779209
-genesis fee
-826
-genesis transaction
-42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625
-location
-42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625:0:0
-output
-42eedac1380dd94594616fc7dc4a9c25d6616220d830ad09841316625:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-                </div>
-
-                <section class="component"></section>
-                <h2 class="subheading" id="what-is-art">What is Art?</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">what-is-art.txt</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <pre>
-What is art?
-Oh baby, don't hurt me
-Don't hurt me
-No more
-                            </pre>
-
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 295872</summary>
-                            <pre>
-id
-bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14i0
-address
-bc1p73ek06u3jxw44xctjft68chzkw35f990ntv7he6rwmmgqr7gjgr
-output value
-10000
-sat
-1870446940084550
-content length
-58 bytes
-content type
-text/plain;charset=utf-8
-timestamp
-2023-03-04 21:37:46 UTC
-genesis height
-779339
-genesis fee
-304
-genesis transaction
-bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14
-location
-bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14:0:0
-output
-bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-                </div>
-
-                <section class="component"></section>
-                <h2 class="subheading" id="donut">Donut</h2>
-                <div class="window">
-                    <div class="title-bar">
-                        <button type="button" aria-label="Close" class="close"
-                            onclick="playSnd('eep');return false;"></button>
-                        <h1 class="title">obxium-donut.svg</h1>
-                        <button type="button" aria-label="Resize" class="resize"
-                            onclick="playSnd('indigo');return false;"></button>
-                    </div>
-                    <div class="separator"></div>
-
-                    <div class="window-pane">
-
-                        <img src="/img/obxium-donut.svg" alt="obxium donut meme" class="resp">
-
-                        <details class="standard-dialog">
-                            <summary class="dialog-text">Inscription 282062</summary>
-                            <pre>
-id
-0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4bei0
-address
-bc1pc40zhksz53xcdpfaskxjfgvren4ez2jmhrh3ezsyq478qdexal5
-output value
-10000
-sat
-1657177931170481
-preview
-link
-content
-link
-content length
-5873 bytes
-content type
-image/svg+xml
-timestamp
-2023-03-04 04:20:26 UTC
-genesis height
-779227
-genesis fee
-3224
-genesis transaction
-0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be
-location
-0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be:0:0
-output
-0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be:0
-offset
-0
-                            </pre>
-                        </details>
-
-                    </div>
-                </div>
-
-                <section class="component">
-                    <div class="left18">
-                        <div class="modal-dialog outer-border quarter-scale">
-                            <div class="inner-border center">
-                                <div class="modal-contents">
-                                    <h1 class="modal-text">Thank you for visiting!</h1>
-                                    <br>
-                                    <section class="field-row just-center">
-                                        <button type="button" class="btn" disabled>Under Construction</button>
-                                    </section>
-                                    <br>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="left18">
-                        <div class="modal-dialog outer-border quarter-scale">
-                            <div class="inner-border center">
-                                <div class="modal-contents">
-                                    <h1 class="modal-text">Simulation Status</h1>
-                                    <div class="left18">
-                                        <div class="field-row">
-                                            <input id="radio8" type="radio" name="bleurgh-example">
-                                            <label for="radio8">Food</label>
-                                        </div>
-                                        <div class="field-row">
-                                            <input id="radio4" type="radio" name="second-example">
-                                            <label for="radio4">Job</label>
-                                        </div>
-                                        <div class="field-row">
-                                            <input id="radio5" type="radio" name="second-example">
-                                            <label for="radio5">Car</label>
-                                        </div>
-                                        <div class="field-row">
-                                            <input id="radio6" type="radio" name="second-example">
-                                            <label for="radio6">House</label>
-                                        </div>
-                                    </div>
-                                    <section class="field-row just-flex-end">
-                                        <button type="button" class="btn"
-                                            onclick="playSnd('quack');return false;">Consume</button>
-                                        <button type="button" class="btn tweak-width-95"
-                                            onclick="playSnd('sosumi');return false;">Fear</button>
-                                    </section>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-                <section class="component"></section>
-                <div>
-                    <ul>
-                        <li>
-                            Art on 5 blockchains since 2018 @ ↹ atelier obxium 🇫🇷
-                        </li>
-                        <li>
-                            <code>System.css</code> is <a
-                                href="https://github.com/sakofchit/system.css/blob/e40c91daf96895b917bc2e45eb60e741cd7a0efc/LICENSE"
-                                title="System.css is MIT licensed.">MIT licensed</a>
-                        </li>
-                    </ul>
-                </div>
-
-
-                </p>
+    <div id="whatisart" class="content resizable draggable-window hidden" data-window-icon="img/web.png" data-window-name="whatisart">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
             </div>
         </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>What Is Art?</span></h1>
+        <div class="inner">
+            <!--
+            <div class="icon">
+                <img src="img/about.png" alt="Macintosh Computer">
+            </div>
+            -->
+            <pre>
+    What is art?
+    Oh baby, don't hurt me
+    Don't hurt me
+    No more
+            </pre>
+            <details class="standard-dialog">
+            <summary class="dialog-text">Inscription 295872</summary>
+                <pre>
+    id
+    bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14i0
+    address
+    bc1p73ek06u3jxw44xctjft68chzkw35f990ntv7he6rwmmgqr7gjgr
+    output value
+    10000
+    sat
+    1870446940084550
+    content length
+    58 bytes
+    content type
+    text/plain;charset=utf-8
+    timestamp
+    2023-03-04 21:37:46 UTC
+    genesis height
+    779339
+    genesis fee
+    304
+    genesis transaction
+    bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14
+    location
+    bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14:0:0
+    output
+    bf5f94d980b25e143198fde894b54f411a6bbfaf6d52e42948b6ffc14:0
+    offset
+    0
+                </pre>
+            </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
 
+    <div id="donut" class="content resizable draggable-window hidden" data-window-icon="img/web.png" data-window-name="donut">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <div class="control-box zoom-box">
+            <div class="control-box-inner">
+                <div class="zoom-box-inner"></div>
+            </div>
+        </div>
+        <div class="control-box window-collapse">
+            <div class="control-box-inner">
+                <div class="window-collapse-inner"></div>
+            </div>
+        </div>
+        <h1 class="titlebar"><span>Donut</span></h1>
+        <div class="inner">
+            <!--
+            <div class="icon">
+                <img src="img/about.png" alt="Macintosh Computer">
+            </div>
+            -->
+            <img src="/img/obxium-donut.svg" alt="donut" class="baby">
+                <details class="standard-dialog">
+                    <summary class="dialog-text">Inscription 282062</summary>
+                    <pre>
+    id
+    0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4bei0
+    address
+    bc1pc40zhksz53xcdpfaskxjfgvren4ez2jmhrh3ezsyq478qdexal5
+    output value
+    10000
+    sat
+    1657177931170481
+    content length
+    5873 bytes
+    content type
+    image/svg+xml
+    timestamp
+    2023-03-04 04:20:26 UTC
+    genesis height
+    779227
+    genesis fee
+    3224
+    genesis transaction
+    0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be
+    location
+    0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be:0:0
+    output
+    0e802dca9ae498c28a7beba259cd021616143e02cbd7cf558e525e4be:0
+    offset
+    0
+                    </pre>
+                </details>
+            <p>
+                <button type="button" class="command_button close-button">Close</button>
+            </p>
+        </div>
+    </div>
+
+    <div id="controls" class="hidden content noscroll draggable-window text-center twenny"
+        data-window-icon="img/controls.png" data-window-name="Ordinals">
+        <div class="control-box close-box">
+            <a title="Close" class="control-box-inner">&nbsp;</a>
+        </div>
+        <h1 class="titlebar noright"><span>Ordinals</span></h1>
+        <div class="inner">
+            <div id="controls-inner">
+                <button type="button" class="command_button">&laquo;</button>
+                <button type="button" class="command_button">&lsaquo;</button>
+                <button type="button" class="command_button">Inscribe</button>
+                <button type="button" class="command_button">Search</button>
+                <button type="button" class="command_button" data-skip="30">
+                    &rsaquo;
+                </button>
+                <button type="button" class="command_button" data-skip="300">
+                    &raquo;
+                </button>
+                <hr>
+                <label>S: </label><input type="text"> <label>L: </label><input type="text"> <label>O: </label><input
+                    type="text">
+                <select>
+                    <option>ID</option>
+                    <option>AD</option>
+                </select>
+                <button type="button" class="command_button">GO</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="errorWindow" class="alert alert-stop content noscroll text-center hidden twenny">
+        <div class="inner">
+            <h3>Save early, save often!</h3>
+            <br>
+            <p>
+                Be careful with BTC private keys.
+            </p>
+            <p>
+                Do not share them with anyone.
+            </p>
+            <p>
+                Not your keys, not your coins.
+            </p>
+            <button type="button" class="command_button right-button close-button">
+                OK
+            </button>
+        </div>
+    </div>
+    <div id="audio-holder">
+        <audio id="sound_boot" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/boot.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_close" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_close.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_collapse" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_collapse.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_expand" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_expand.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_open" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_open.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_stopmoving" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_stopmoving.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+        <audio id="sound_window_moving" class="handsoff hidden" preload="auto">
+            <source src="rsrc/ui/window_moving.mp3" type="audio/mpeg">
+            Your browser does not support the HTML audio element.
+        </audio>
+    </div>
+    <script src="js/platinum.js"></script>
 </body>
-
-<script>
-    function playSnd(snd) {
-        var sound = document.getElementById(snd);
-        sound.play();
-    }
-</script>
-<audio id="eep" src="/sound/eep.wav"></audio>
-<audio id="indigo" src="/sound/indigo.mp3"></audio>
-<audio id="quack" src="/sound/quack.mp3"></audio>
-<audio id="sosumi" src="/sound/sosumi.mp3"></audio>
 
 </html>
